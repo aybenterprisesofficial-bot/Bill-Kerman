@@ -39,7 +39,7 @@ export const botConfig = {
     owners: process.env.OWNER_IDS?.split(",").map((id) => id.trim()).filter(Boolean) || [],
 
     // Default wait time between command uses (in seconds).
-    defaultCooldown: 3,
+    defaultCooldown: 5,
 
     // If true, old commands are removed before re-registering.
     deleteCommands: false,
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Bill Kerman",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -161,29 +161,29 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "necks",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "necks",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "Ñ",
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 10000,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 1000000000000,
 
     // Daily reward amount.
     dailyAmount: 100,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 25,
+    workMax: 350,
 
     // Beg command random payout range.
-    begMin: 5,
-    begMax: 50,
+    begMin: 1,
+    begMax: 100,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -194,11 +194,11 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.1,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
-    robFailJailTime: 3600000,
+    robFailJailTime: 7200000,
   },
 
   // =========================
@@ -272,7 +272,7 @@ export const botConfig = {
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
-    minimumDuration: 300000,
+    minimumDuration: 1500000,
     // 2592000000 = 30 days.
     maximumDuration: 2592000000,
 
